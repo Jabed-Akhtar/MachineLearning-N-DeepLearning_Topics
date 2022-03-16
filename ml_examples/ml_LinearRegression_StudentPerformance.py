@@ -22,7 +22,7 @@
  *      - used datasets and files can be found in folder: '/datasets/student/student-mat.csv'
  *          -> please also read 'student.txt' file for more information about the here used dataset
  *      - trained model is saved at location: '/trainedModels/linearRegression_studentPerfor.pickle'
- *      - a plot of prediction can be found at location: '/docs_images/linearRegression_studentPerformace_predictionPlot_G1.png'
+ *      - a plot of prediction can be found at location: '/docs_images/linearRegression_studentPerformace_predictionPlot_xxx.png'
  * 
  ******************************************************************************
 """
@@ -96,7 +96,7 @@ for _ in range(30):
             
             
 #Plotting =====================================================================
-p = "G1"
+p = "absences"
 style.use("ggplot")
 plt.scatter(data[p], data["G3"])
 plt.xlabel(p)
