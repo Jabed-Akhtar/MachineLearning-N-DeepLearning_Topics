@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 """
+ * Note: not finished!!!
  ******************************************************************************
  * @author     : Jabed-Akhtar (github)
  * @Created on : Mon Mar 16 23:04:05 2022
@@ -17,11 +18,10 @@
  *      7. Saving the best model - a method
  *      8. Plotting
  * :Descriptions/Infos:
- *      - a source used within this script: https://www.techwithtim.net/tutorials/machine-learning-python/
- *      - dataset can be found at: https://archive.ics.uci.edu/ml/datasets/student+performance
- *      - used datasets and files can be found in folder: '/datasets/student/student-mat.csv'
- *          -> please also read 'student.txt' file for more information about the here used dataset
- *      - trained model is saved at location: '/trainedModels/linearRegression_studentPerfor.pickle'
+ *      - a source used within this script: ---
+ *      - dataset can be found at: https://www.kaggle.com/datasets/gregorut/videogamesales
+ *      - used datasets and files can be found in folder: '/datasets/vgsales.csv'
+ *      - trained model is saved at location: '/trainedModels/---.pickle'
  *      - a plot of prediction can be found at location: '/docs_images_logs__/linearRegression_studentPerformace_predictionPlot_xxx.png'
  * 
  ******************************************************************************
@@ -44,8 +44,8 @@ predict = "G3"
 
 
 #Reading data =================================================================
-data = pd.read_csv("datasets/student/student-mat.csv", sep=";")
-data = data[["G1", "G2", "G3", "studytime", "failures", "absences"]]
+data = pd.read_csv("datasets/vgsales.csv")
+data
 
 X = np.array(data.drop([predict], 1))
 Y = np.array(data[predict])
