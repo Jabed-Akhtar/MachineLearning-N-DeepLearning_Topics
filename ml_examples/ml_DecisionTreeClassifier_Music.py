@@ -33,7 +33,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 from sklearn import tree
-from sklearn.externals import joblib
+#from sklearn.externals import joblib
 import matplotlib.pyplot as plt
 
 
