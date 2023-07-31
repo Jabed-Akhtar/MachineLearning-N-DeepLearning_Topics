@@ -44,7 +44,7 @@ predict = "G3"
 
 
 #Reading data =================================================================
-data = pd.read_csv("datasets/student/student-mat.csv", sep=";")
+data = pd.read_csv('/datasets/student/student-mat.csv', sep=";")
 data = data[["G1", "G2", "G3", "studytime", "failures", "absences"]]
 
 X = np.array(data.drop([predict], 1))
